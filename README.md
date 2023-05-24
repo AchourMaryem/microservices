@@ -150,23 +150,25 @@ Please note that for the REST endpoints, the data is stored in a SQLite database
 Port:http://localhost:5000/graphql
 
     ``` 
-    mutation {
-      addTicket(HDep: "10:00 AM", HArri: "12:00 PM", numVol: "12345") {
-        id
-        HDep
-        HArri
-        numVol
-      }
-    } 
+        mutation {
+          addTicket(HDep: "10:00 AM", HArri: "12:00 PM", numVol: "12345") {
+            id
+            HDep
+            HArri
+            numVol
+          }
+        } 
     ```
+    
+    
     ``` 
-    mutation {
-      updateTicket:(id:1 ,HDep, HArri, numVol) {
-        id
-        HDep
-        numVol
-      }
-    }
+        mutation {
+          updateTicket:(id:1 ,HDep, HArri, numVol) {
+            id
+            HDep
+            numVol
+          }
+        }
     
     ```
 
