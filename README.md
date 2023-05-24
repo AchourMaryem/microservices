@@ -90,43 +90,41 @@ Please note that for the REST endpoints, the data is stored in a SQLite database
 Port: http://localhost:5002/graphql
 
 
-```
-    mutation {
-      addOrder(customerID: 1, ticketId: 123) {
-        id
-        customerID
-        ticketId
-      }
-      }
+        ```
+        mutation {
+          addOrder(customerID: 1, ticketId: 123) {
+            id
+            customerID
+            ticketId
+          }
+          }
   
-    ```
+          ```
 
+        ```
 
+        mutation {
+          updateOrder(id:1 , customerID: 1, ticketId: 123) {
+            id
+            name
+            email
+          }
+        }
 
+      ```
+      
+      
+      
+       ```
 
-```
+        mutation {
+        deleteOrder: { id:1
+         }
 
-    mutation {
-      updateOrder(id:1 , customerID: 1, ticketId: 123) {
-        id
-        name
-        email
-      }
-    }
-
-  ```
-
-
-
-   ```
-
-    mutation {
-    deleteOrder: { id:1
-     }
- 
- 
-     ```
-
+         ```
+    
+    
+    
 
 # Ticket Microservices 
 
@@ -151,30 +149,33 @@ Please note that for the REST endpoints, the data is stored in a SQLite database
 
 Port:http://localhost:5000/graphql
 
-``` mutation {
-  addTicket(HDep: "10:00 AM", HArri: "12:00 PM", numVol: "12345") {
-    id
-    HDep
-    HArri
-    numVol
-  }
-} 
+``` 
+    mutation {
+      addTicket(HDep: "10:00 AM", HArri: "12:00 PM", numVol: "12345") {
+        id
+        HDep
+        HArri
+        numVol
+      }
+    } 
 ```
+    ``` 
+    mutation {
+      updateTicket:(id:1 ,HDep, HArri, numVol) {
+        id
+        HDep
+        numVol
+      }
+    }
+    
+    ```
 
-``` mutation {
-  updateTicket:(id:1 ,HDep, HArri, numVol) {
-    id
-    HDep
-    numVol
-  }
-}
-```
 
-
-``` mutation {
-deleteTicket: { id:1
- }
-```
+    ``` 
+        mutation {
+        deleteTicket: { id:1
+         }
+    ```
 
 # apiGateway Microservices 
 
