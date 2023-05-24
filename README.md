@@ -91,25 +91,26 @@ Port: http://localhost:5002/graphql
 
 
         ```
-        mutation {
-          addOrder(customerID: 1, ticketId: 123) {
-            id
-            customerID
-            ticketId
-          }
-          }
+            mutation {
+              addOrder(customerID: 1, ticketId: 123) {
+                id
+                customerID
+                ticketId
+              }
+              }
   
-          ```
+         ```
+
 
         ```
 
-        mutation {
-          updateOrder(id:1 , customerID: 1, ticketId: 123) {
-            id
-            name
-            email
-          }
-        }
+            mutation {
+              updateOrder(id:1 , customerID: 1, ticketId: 123) {
+                id
+                name
+                email
+              }
+            }
 
       ```
       
@@ -117,9 +118,9 @@ Port: http://localhost:5002/graphql
       
        ```
 
-        mutation {
-        deleteOrder: { id:1
-         }
+            mutation {
+            deleteOrder: { id:1
+             }
 
          ```
     
