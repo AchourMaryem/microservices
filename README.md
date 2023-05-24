@@ -99,6 +99,8 @@ Port: http://localhost:5002/graphql
                   
  
   ``` 
+  
+   ``` 
 mutation {
                   updateOrder(id:1 , customerID: 1, ticketId: 123) {
                     id
@@ -107,12 +109,16 @@ mutation {
                   }
                 }
                 
-                
+     
+  ``` 
+  
+   ``` 
+   
  mutation {
  deleteOrder: { id:1
                  }
 
-    
+  ```   
 
 # Ticket Microservices 
 
