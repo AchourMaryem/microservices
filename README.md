@@ -4,7 +4,7 @@ This repository demonstrates an example implementation of a combined GraphQL and
 npm init -y
 npm install express graphql sqlite3 body-parser express-graphql
 # API Endpoints
-# REST Endpoints
+#REST Endpoints
 
 GET /customers: Retrieves all customers from the database.
 
