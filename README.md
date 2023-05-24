@@ -90,10 +90,10 @@ Please note that for the REST endpoints, the data is stored in a SQLite database
 Port: http://localhost:5002/graphql
  ``` 
  mutation {
-                  addOrder(customerID: 1, ticketId: 123) {
-                    id
-                    customerID
-                    ticketId
+             addOrder(customerID: 1, ticketId: 123) {
+              id
+              customerID
+              ticketId
                   }
                   }
                   
@@ -102,21 +102,21 @@ Port: http://localhost:5002/graphql
   
    ``` 
 mutation {
-                  updateOrder(id:1 , customerID: 1, ticketId: 123) {
-                    id
-                    name
-                    email
-                  }
-                }
+         updateOrder(id:1 , customerID: 1, ticketId: 123) {
+          id
+          name
+           email
+    }
+       }
                 
      
   ``` 
   
    ``` 
    
- mutation {
- deleteOrder: { id:1
-                 }
+     mutation {
+     deleteOrder: { id:1
+                     }
 
   ```   
 
