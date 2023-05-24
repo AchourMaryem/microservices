@@ -4,6 +4,7 @@ This repository demonstrates an example implementation of a combined GraphQL and
 customers-orders-tickets:
 
 npm init -y
+
 npm install express graphql sqlite3 body-parser express-graphql
 
 api gateway:
