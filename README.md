@@ -35,8 +35,8 @@ Port: Port: http://localhost:5001/graphql
 
 mutation {
 
+
   addCustomer(name: "John Doe", email: "johndoe@example.com", password: "password123") {
-  
     id
     
     name
@@ -44,8 +44,7 @@ mutation {
     email
     
   }
-  
-}
+  }
 
 
 mutation {
