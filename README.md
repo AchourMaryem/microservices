@@ -88,11 +88,8 @@ Please note that for the REST endpoints, the data is stored in a SQLite database
 #GraphQL Endpoint
 
 Port: http://localhost:5002/graphql
-
-
-        ```
-        
-                mutation {
+ ``` 
+ mutation {
                   addOrder(customerID: 1, ticketId: 123) {
                     id
                     customerID
@@ -100,38 +97,21 @@ Port: http://localhost:5002/graphql
                   }
                   }
                   
-  
-         ```
-
-
-
-
-        ```
-
-                mutation {
+ 
+  ``` 
+mutation {
                   updateOrder(id:1 , customerID: 1, ticketId: 123) {
                     id
                     name
                     email
                   }
                 }
-
-
-         ```
-      
-      
-      
-         ```
-
-
-                mutation {
-                deleteOrder: { id:1
+                
+                
+ mutation {
+ deleteOrder: { id:1
                  }
 
-
-         ```
-    
-    
     
 
 # Ticket Microservices 
