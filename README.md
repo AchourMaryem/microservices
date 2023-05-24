@@ -46,18 +46,36 @@ addCustomer(name: "John Doe", email: "johndoe@example.com", password: "password1
 
 
 
-mutation {
+
+
+
+
+
+
+
+
+
+``` mutation {
   updateCustomer(id: 1 , name: "John Doe", email: "johndoe@example.com", password: "password123") {
     id
     name
     email
   }
-}
+
+  } ```
 
 
 
 
- ```mutation {
+
+
+
+
+
+
+
+
+ ``` mutation {
 deleteCustomer: { id:1
  }``` 
 
