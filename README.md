@@ -32,18 +32,16 @@ Please note that for the REST endpoints, the data is stored in a SQLite database
 #GraphQL Endpoint
 
 Port: Port: http://localhost:5001/graphql
-
+``` ```
 mutation {
 addCustomer(name: "John Doe", email: "johndoe@example.com", password: "password123") {
-
-
     id
     name
     email
      }
   }
 
-
+``` ```
 mutation {
   updateCustomer(id: 1 , name: "John Doe", email: "johndoe@example.com", password: "password123") {
     id
