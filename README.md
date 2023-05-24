@@ -54,9 +54,14 @@ addCustomer(name: "John Doe", email: "johndoe@example.com", password: "password1
   }
 }```
 
+
+
+
  ```mutation {
 deleteCustomer: { id:1
  }``` 
+
+
 
 
 # Orders Microservices 
