@@ -1,6 +1,6 @@
 // customer.js
 const db = require('./models');
-// Implémentation des résolveurs GraphQL
+
 const customerResolver = {
 customer: ({ id }) => {
 return new Promise((resolve, reject) => {
